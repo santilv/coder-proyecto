@@ -1,0 +1,300 @@
+*{
+  margin: 0;
+  padding: 0;
+ box-sizing: border-box; 
+}
+
+
+
+ /*--------HEADER------*/
+
+header nav ul li{
+    display: inline;
+  
+    list-style: none;
+
+}
+
+
+header nav ul li a{
+text-decoration: none;
+color: black;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+header nav img {
+    width: 70px;
+    height: 50px;
+}
+header{
+    background-color: beige;
+
+}
+
+    
+
+header nav ul {
+    display: inline-block;
+}
+.inicio  {
+    text-decoration: none;
+
+    
+
+}
+.inicio li {
+    text-decoration: none;
+    list-style: none;
+    padding: 25px;
+}
+
+
+.iconos li {
+    text-decoration: none;
+    padding: 25px;
+    list-style: none;
+}
+.iconos li img {
+    width: 20px;
+    height: 20px;
+}
+.iconos li {
+    text-decoration: none;   
+}
+
+  /*--------MAIN------*/
+  .hero {
+    background-image: url("../img/img-1.png");
+    height: 80vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.hero div h2 {
+    position: relative;
+    top: 150px;
+   font-size: 70px;
+   font-style:oblique;
+}
+.hero div img {
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.hero div {
+    text-align: center;
+    color: gainsboro;
+}
+
+.productosDestacados div img{
+    width: 180px;
+    height: 120px;
+}
+.productosDestacados div {
+
+    display: inline-block;
+     margin: 70px;
+    
+}
+
+.productosDestacados h2 {
+    margin-top: 50px;
+    
+}
+
+.productosDestacados div h4 {
+    padding: 10px;
+}
+
+.productosDestacados {
+    text-align: center;
+}
+.esperando div img {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+}
+
+.esperando div h2 {
+    position: relative;
+    top: 200px;
+    color: azure;
+    text-align: center;
+    font-size: 60px
+    ;
+    
+}
+.catalogo section div img {
+    width: 10%;
+    height: 10%;
+}
+ .catalogo {         /* Porque no me funciona en la pagina de catalogo? */
+    display: inline-block;  
+      
+}
+
+.heroA section div img{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 80%;
+
+}
+
+
+.heroM section div{
+   margin-bottom: 100px;
+   text-align: center;
+
+   
+}
+
+.heroM section h2 {
+     position: relative;
+    top: 10px;
+    text-align: center;
+    margin-bottom: 90px
+    ;
+
+}
+
+.heroM section div img {
+    width: 45%;
+    height: 45%;
+ 
+}
+
+
+
+
+.acercaDeB{
+    background-image: url("../img/img-3.png.crdownload");
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.acercaDeB div h2 {
+    position: relative;
+    top: 150px;
+   font-size: 40px;
+   color: yellow;
+   position: center;
+   
+    
+}
+.acercaDeB div h3 {
+    position: relative;
+    top: 150px;
+   font-size: 40px;
+color: gold;
+   position: center;
+
+    
+}
+
+.acercaDeB div {
+    text-align: center;
+    position: relative;
+    top: 250px;
+  
+}
+
+.encontranos {
+    background-image: url("../img/img-4.png");
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.encontranos h2 {
+    font-size: 30px;
+    color: azure;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 60px;
+}
+
+.encontranos div {
+    position: relative;
+    left: 250px;
+
+}
+
+.encontranos div h3{
+    font-size: x-large;
+    font-style: oblique;
+    color: aliceblue;
+    position: relative;
+    right: 100px;
+
+
+}
+
+.horarios h2 {
+    font-size: 30px;
+    color: black;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 60px;
+
+}
+
+.horarios div {
+    position: relative;
+left: 650px    
+
+}
+
+.horarios div h3 {
+    text-align: center;
+    font-size: larger;
+    font-style: italic;
+    border: 1px solid black;
+    margin-bottom: 10px;
+    }
+    
+    .horarios div  {
+        width: 40%;
+        height: 40%;
+    
+    }
+    
+
+
+
+
+
+   /*--------FOOTER------*/
+
+   .redes div img{
+    width: 1%;
+    height: 1%;
+
+}
+
+.redes h4 {
+
+
+    font-size: larger;
+
+}
+footer {
+    background-color: beige;
+    
+    
+}
+
