@@ -1,10 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
 *{
   margin: 0;
   padding: 0;
  box-sizing: border-box; 
 }
 
+html {
+    scroll-behavior: smooth;
+}
 
+body {
+    display: grid;
+    grid-template-areas: "header"
+    "main"
+    "footer";
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 1fr;
+}
 
  /*--------HEADER------*/
 
@@ -12,6 +25,7 @@ header nav ul li{
     display: inline;
   
     list-style: none;
+    
 
 }
 
@@ -27,8 +41,8 @@ header nav img {
     height: 50px;
 }
 header{
-    background-color: beige;
-
+    background-color: #fff;
+    grid-area: header;
 }
 
     
@@ -38,31 +52,84 @@ header nav ul {
 }
 .inicio  {
     text-decoration: none;
-
-    
-
+    flex: 1;
+    display: flex;
+    justify-content: center;
 }
-.inicio li {
+
+.inicio li a:hover{
+    color:#FCA311;
+    text-decoration: underline;
+    transition: all 0.3s ease;
+}
+
+
+
+.inicio li a{
+    
     text-decoration: none;
     list-style: none;
     padding: 25px;
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2em;
+   
+    
+}
+.iconos{
+    flex: 1;
+    display: flex;
+    justify-content: center;
 }
 
 
+
+.logo {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+
+}
+
+.logo img {
+
+    width: 70px;
+    height: 70px;
+
+
+}
+
+.iconos li a {
+    padding: 20px;
+}
 .iconos li {
     text-decoration: none;
     padding: 25px;
     list-style: none;
+    
 }
 .iconos li img {
-    width: 20px;
-    height: 20px;
-}
-.iconos li {
-    text-decoration: none;   
+    width: 30px;
+    height: 30px;
 }
 
+
+.iconos li {
+    text-decoration: none;    
+}
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+
   /*--------MAIN------*/
+
+main{
+    grid-area: main;
+}   
+
   .hero {
     background-image: url("../img/img-1.png");
     height: 80vh;
@@ -73,11 +140,12 @@ header nav ul {
     background-attachment: fixed;
 }
 
-.hero div h2 {
+.hero div h1 {
     position: relative;
     top: 150px;
    font-size: 70px;
    font-style:oblique;
+   font-family: 'Oswald', sans-serif;
 }
 .hero div img {
     width: 100%;
@@ -104,6 +172,7 @@ header nav ul {
 
 .productosDestacados h2 {
     margin-top: 50px;
+    font-family: 'Oswald', sans-serif;
     
 }
 
@@ -129,16 +198,75 @@ header nav ul {
     text-align: center;
     font-size: 60px
     ;
-    
+    font-family: 'Oswald', sans-serif;
 }
 .catalogo section div img {
-    width: 10%;
-    height: 10%;
+    width: 100%;
+    
+  
 }
- .catalogo {         /* Porque no me funciona en la pagina de catalogo? */
-    display: inline-block;  
-      
+
+.catalogo h2 {
+    font-family: 'Oswald', sans-serif;
+    
+text-align: center;
+margin: 3rem 0;
+
+
 }
+
+.prod{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0 8px #0005;
+    padding: 4rem;
+   
+}
+
+
+
+
+.section1{
+    display: flex;
+    justify-content: center;
+    margin: 4rem 0;
+    
+}
+
+.productImg{
+  width: 300px;
+ 
+  
+}
+ 
+.products {
+    display: grid;
+    grid-template-rows: repeat(3,1fr);
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 3rem 12rem;
+}
+
+@media  screen and (max-width:1050px) {
+    .products{
+        grid-template-columns: repeat(2,1fr);
+
+        
+    }
+    .iconos li img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .catalogo h2 {
+        font-size:  23px;
+    }
+}
+
+  
+    
+
+
+
 
 .heroA section div img{
     background-position: center;
@@ -150,14 +278,20 @@ header nav ul {
 }
 
 
-.heroM section div{
+.heroM  div{
    margin-bottom: 100px;
    text-align: center;
 
    
 }
 
-.heroM section h2 {
+.heroM h2{
+    margin-top: 10px;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+.heroM div h2 {
      position: relative;
     top: 10px;
     text-align: center;
@@ -166,17 +300,111 @@ header nav ul {
 
 }
 
-.heroM section div img {
+.heroM  div img {
     width: 45%;
     height: 45%;
  
 }
 
+.gridContenedor {
+    
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2,1fr);
+    grid-template-areas: 
+    "mp mp mp "
+    "cripto efectivo paypal"
+    
+
+    ;
+    
+}
+
+.mercadoPago {
+    width: 100%;
+    height: 100%;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-area: mp;
+}
+
+.cripto {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    width: 100%;
+    height:100%;
+    grid-area: cripto;
+}
+
+.paypal {  
+     
+     width: 100%;
+    height:100%;
+    grid-area: paypal;
+}
+
+.efectivo {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    width: 100%;
+    height: 100%;
+    grid-area: efectivo;
+}
+
+@media screen and (max-width: 1050px){
+    .inicio li a {
+        font-size: .9em;
+    }
+    .gridContenedor {
+     grid-template-columns: 1fr 1fr;
+     grid-template-rows:.5fr .5fr ;   
+    grid-template-areas: 
+    "mp mp"
+    "cripto paypal"
+    "efectivo ."
+
+    ;
+    }
+  
+}
+
+@media screen and (max-width: 900px){
+    .inicio li a {
+        font-size: .9em;
+    }
+    .gridContenedor {
+        
+     grid-template-columns: 1fr ;
+     grid-template-rows:1fr 1fr 1fr 1fr  ;   
+        grid-template-areas: 
+        "mp"
+        "cripto"
+        "paypal"
+        "efectivo"
+
+        
+        ;
+    
+    }
+  
+   footer div  img {
+    width: 100px;
+
+
+   }
+    
+}
+
+
+
+
 
 
 
 .acercaDeB{
-    background-image: url("../img/img-3.png.crdownload");
+    background-image: url( "../img/img-3.png.crdownload") ;
+    background-image:rgba(0, 0, 0, 0.356) ;
     height: 100vh;
     width: 100%;
     background-position: center;
@@ -189,8 +417,10 @@ header nav ul {
     position: relative;
     top: 150px;
    font-size: 40px;
-   color: yellow;
+   color: white;
    position: center;
+   font-family: 'Oswald', sans-serif;
+
    
     
 }
@@ -198,18 +428,25 @@ header nav ul {
     position: relative;
     top: 150px;
    font-size: 40px;
-color: gold;
+color: white;
    position: center;
+   font-family: 'Oswald', sans-serif;
+
 
     
 }
 
 .acercaDeB div {
+
     text-align: center;
     position: relative;
     top: 250px;
   
 }
+
+
+
+
 
 .encontranos {
     background-image: url("../img/img-4.png");
@@ -225,7 +462,7 @@ color: gold;
     color: azure;
     text-align: center;
     margin-bottom: 40px;
-    margin-top: 60px;
+    margin-top: 30px;
 }
 
 .encontranos div {
@@ -245,12 +482,13 @@ color: gold;
 }
 
 .horarios h2 {
-    font-size: 30px;
+    font-size: 40px;
     color: black;
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
     margin-top: 60px;
-
+    font-family: 'Oswald', sans-serif;
+    
 }
 
 .horarios div {
@@ -286,15 +524,46 @@ left: 650px
 
 }
 
-.redes h4 {
+
+.redes  {
+font-size: 30px;
+
+}
+
+.logoFooter {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    width: 250px;
+    height: 150px;
+    
+
+}
 
 
-    font-size: larger;
 
+.iconosRedes {padding: 50px;
+   
 }
 footer {
-    background-color: beige;
-    
-    
+    background-color: black;
+    grid-area: footer;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+footer div img {
+    filter: invert(100%);
+    width: 100%;
+}
+footer div a {
+    width: 30px;
+}
+footer h3{
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
+}
+
+ 
