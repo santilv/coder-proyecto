@@ -1,0 +1,103 @@
+@media  screen and (max-width:1050px) {
+    .products{
+        grid-template-columns: repeat(2,1fr);
+
+        
+    }
+    .iconos {
+        li{
+            img{
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+    .catalogo {
+        h2{
+            font-size:  23px;
+        }
+    }
+
+}
+
+@media  screen and (max-width:600px){
+    .products{
+        grid-template-columns: repeat(1,1fr);
+        padding-top: 50px;
+         
+
+        
+    }
+
+    .iconos {
+        li{
+            img{
+                width: 20px;
+                height: 20px;
+            }
+        }
+    }
+
+    .catalogo {
+        h2{
+            font-size:  23px;
+        }
+    }
+    
+     
+    
+}
+
+@media screen and (max-width: 1050px){
+    .inicio {
+        li{
+            a{
+                font-size: .9em;
+                padding: 30px;
+                display: flex;
+                flex-direction:column  
+            }
+        }
+    }
+
+    .gridContenedor {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows:.5fr .5fr ;   
+       grid-template-areas: 
+       "mp mp"
+       "cripto paypal"
+       "efectivo ."
+   
+       ;
+       }
+}
+
+@media screen and (max-width: 900px){
+    .inicio {
+        li{
+            a{
+                font-size: .9em;
+                padding: 30px;
+                display: flex;
+                flex-direction:column  
+            }
+        }
+    }
+    .gridContenedor {
+        
+        grid-template-columns: 1fr ;
+        grid-template-rows:1fr 1fr 1fr 1fr  ;   
+           grid-template-areas: 
+           "mp"
+           "cripto"
+           "paypal"
+           "efectivo"
+   
+           
+           ;
+       
+       }
+     
+
+}
+

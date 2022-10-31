@@ -1,0 +1,36 @@
+@import "../base/variables";
+.redes {
+    font-size: 30px;
+    border-top: solid 2px black;
+    div{
+        img{
+            width: 3%;
+            height: 3%;  
+        }
+    }
+    h3{
+        grid-area: footer;
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: rgb(0, 0, 0);
+        font-family: $fuente-principal;
+        text-align: center;
+    }
+    .iconosRedes{
+        @extend %flex;
+        gap:20px;
+
+    }
+    .contacto{
+        h4 {
+            font-size: 18px;
+            font-family: $fuente-principal;
+            display: flex;
+            margin-left: 20px;
+            
+         }
+
+    }
+}

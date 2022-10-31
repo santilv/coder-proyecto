@@ -1,0 +1,332 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+html {
+  scroll-behavior: smooth; }
+
+body {
+  display: grid;
+  grid-template-areas: "header" "main" "footer";
+  grid-template-rows: auto auto auto;
+  grid-template-columns: 1fr; }
+
+main {
+  grid-area: main; }
+
+.hero div h1, .acercaDeB, .acercaDeB .desde, .redes .iconosRedes {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+header {
+  background-color: #fff;
+  grid-area: header; }
+  header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    header nav .inicio {
+      text-decoration: none;
+      flex: 1;
+      display: flex;
+      justify-content: center; }
+      header nav .inicio li a {
+        text-decoration: none;
+        list-style: none;
+        padding: 25px;
+        font-family: font-family("Oswald", sans-serif);
+        font-size: 1.2em; }
+        header nav .inicio li a:hover {
+          color: #FCA311;
+          text-decoration: underline;
+          transition: all 0.3s ease; }
+    header nav .logo {
+      flex: 1;
+      display: flex;
+      justify-content: center; }
+      header nav .logo img {
+        width: 70px;
+        height: 70px; }
+    header nav .iconos li {
+      text-decoration: none;
+      padding: 25px;
+      list-style: none; }
+      header nav .iconos li a {
+        padding: 20px; }
+      header nav .iconos li img {
+        width: 30px;
+        height: 30px; }
+
+.hero div h1, .acercaDeB, .acercaDeB .desde, .redes .iconosRedes {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+/* ---MAIN INDEX---*/
+.hero {
+  background-image: url("../img/img-1.png");
+  height: 80vh;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed; }
+  .hero div {
+    text-align: center;
+    color: gainsboro; }
+    .hero div h1 {
+      font-style: oblique;
+      font-family: font-family("Oswald", sans-serif);
+      font-size: 80px;
+      flex-direction: column;
+      padding: 4rem;
+      gap: 1rem; }
+    .hero div img {
+      width: 100%;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed; }
+
+.productosDestacados {
+  text-align: center; }
+  .productosDestacados h2 {
+    margin-top: 50px;
+    font-family: font-family("Oswald", sans-serif); }
+  .productosDestacados div {
+    display: inline-block;
+    margin: 70px; }
+    .productosDestacados div img {
+      width: 180px;
+      height: 120px; }
+    .productosDestacados div h4 {
+      padding: 10px; }
+
+.esperando div img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  width: 100%; }
+
+.esperando div h2 {
+  position: relative;
+  top: 200px;
+  color: azure;
+  text-align: center;
+  font-size: 60px;
+  font-family: font-family("Oswald", sans-serif); }
+
+/* ---MAIN ACERCA DE---*/
+.acercaDeB {
+  background-image: url("../img/img-3.png.crdownload");
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .acercaDeB .desde {
+    width: 50%;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.493);
+    padding: 2rem;
+    gap: 1rem; }
+    .acercaDeB .desde div h2 {
+      font-size: 40px;
+      color: white;
+      font-family: font-family("Oswald", sans-serif);
+      text-align: center; }
+    .acercaDeB .desde div h3 {
+      font-size: 25px;
+      color: white;
+      font-weight: 200;
+      font-family: font-family("Oswald", sans-serif); }
+
+.encontranos {
+  background-image: url("../img/img-4.png");
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* ---MAIN CATALOGO---*/
+  /* ---MAIN METODO DE PAGO---*/ }
+  .encontranos h2 {
+    font-size: 30px;
+    color: azure;
+    text-align: center;
+    margin-bottom: 40px;
+    margin-top: 30px;
+    padding-top: 30px; }
+  .encontranos div {
+    position: relative;
+    left: 250px; }
+    .encontranos div h3 {
+      font-size: x-large;
+      font-style: oblique;
+      color: aliceblue;
+      position: relative;
+      right: 100px; }
+  .encontranos .horarios h2 {
+    font-size: 40px;
+    color: black;
+    text-align: center;
+    margin-bottom: 10px;
+    margin-top: 60px;
+    font-family: font-family("Oswald", sans-serif); }
+  .encontranos .horarios div {
+    position: relative;
+    left: 650px;
+    width: 40%;
+    height: 40%; }
+    .encontranos .horarios div h3 {
+      text-align: center;
+      font-size: larger;
+      font-style: italic;
+      border: 1px solid black;
+      margin-bottom: 10px; }
+    .encontranos .horarios div img {
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      width: 80%; }
+  .encontranos .catalogo h2 {
+    font-family: font-family("Oswald", sans-serif);
+    text-align: center;
+    margin: 3rem 0; }
+    .encontranos .catalogo h2 section div img {
+      width: 100%; }
+  .encontranos .catalogo .section1 {
+    display: flex;
+    justify-content: center;
+    margin: 4rem 0; }
+    .encontranos .catalogo .section1 .products {
+      display: grid;
+      grid-template-rows: repeat(3, 1fr);
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 3rem 12rem; }
+      .encontranos .catalogo .section1 .products .prod {
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0 0 8px #0005;
+        padding: 4rem; }
+  .encontranos .heroM h2 {
+    margin-top: 10px;
+    font-family: font-family("Oswald", sans-serif); }
+  .encontranos .heroM div {
+    margin-bottom: 100px;
+    text-align: center; }
+    .encontranos .heroM div h2 {
+      position: relative;
+      top: 10px;
+      text-align: center;
+      margin-bottom: 90px; }
+    .encontranos .heroM div img {
+      width: 45%;
+      height: 45%; }
+  .encontranos .gridContenedor {
+    margin: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: "mp mp mp " "cripto efectivo paypal"; }
+    .encontranos .gridContenedor .mercadoPago {
+      width: 100%;
+      height: 100%;
+      grid-column-start: 1;
+      grid-column-end: 4;
+      grid-area: mp; }
+    .encontranos .gridContenedor .cripto {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      width: 100%;
+      height: 100%;
+      grid-area: cripto; }
+    .encontranos .gridContenedor .paypal {
+      width: 100%;
+      height: 100%;
+      grid-area: paypal; }
+    .encontranos .gridContenedor .efectivo {
+      grid-column-start: 2;
+      grid-column-end: 3;
+      width: 100%;
+      height: 100%;
+      grid-area: efectivo; }
+
+.hero div h1, .acercaDeB, .acercaDeB .desde, .redes .iconosRedes {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.redes {
+  font-size: 30px;
+  border-top: solid 2px black; }
+  .redes div img {
+    width: 3%;
+    height: 3%; }
+  .redes h3 {
+    grid-area: footer;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    font-family: font-family("Oswald", sans-serif);
+    text-align: center; }
+  .redes .iconosRedes {
+    gap: 20px; }
+  .redes .contacto h4 {
+    font-size: 18px;
+    font-family: font-family("Oswald", sans-serif);
+    display: flex;
+    margin-left: 20px; }
+
+.hero div h1, .acercaDeB, .acercaDeB .desde, .redes .iconosRedes {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+@media screen and (max-width: 1050px) {
+  .products {
+    grid-template-columns: repeat(2, 1fr); }
+  .iconos li img {
+    width: 20px;
+    height: 20px; }
+  .catalogo h2 {
+    font-size: 23px; } }
+
+@media screen and (max-width: 600px) {
+  .products {
+    grid-template-columns: repeat(1, 1fr);
+    padding-top: 50px; }
+  .iconos li img {
+    width: 20px;
+    height: 20px; }
+  .catalogo h2 {
+    font-size: 23px; } }
+
+@media screen and (max-width: 1050px) {
+  .inicio li a {
+    font-size: .9em;
+    padding: 30px;
+    display: flex;
+    flex-direction: column; }
+  .gridContenedor {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: .5fr .5fr;
+    grid-template-areas: "mp mp" "cripto paypal" "efectivo ."; } }
+
+@media screen and (max-width: 900px) {
+  .inicio li a {
+    font-size: .9em;
+    padding: 30px;
+    display: flex;
+    flex-direction: column; }
+  .gridContenedor {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "mp" "cripto" "paypal" "efectivo"; } }

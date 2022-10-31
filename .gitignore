@@ -1,3 +1,6 @@
 # PDF
 
 *.pdf
+
+#NODE
+node_modules/

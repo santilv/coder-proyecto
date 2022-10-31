@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+ box-sizing: border-box; 
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    display: grid;
+    grid-template-areas: "header"
+    "main"
+    "footer";
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 1fr;
+}
+main{
+    grid-area: main;
+}  

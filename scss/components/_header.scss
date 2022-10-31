@@ -1,0 +1,67 @@
+@import "../base/variables";
+
+
+header {
+    background-color: #fff;
+    grid-area: header;
+
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .inicio{
+            text-decoration: none;
+            flex: 1;
+            display: flex;
+            justify-content: center;
+
+            li{
+                a{
+                    text-decoration: none;
+                    list-style: none;
+                    padding: 25px;
+                    font-family: $fuente-principal;
+                    font-size: 1.2em;
+                    &:hover {
+                        color:#FCA311;
+                        text-decoration: underline;
+                        transition: all 0.3s ease;
+                    }
+                }
+            }
+
+        }
+            .logo {
+                flex: 1;
+                display: flex;
+                justify-content: center;
+                    img{
+                        width: 70px;
+                        height: 70px;
+                     }
+            }
+            .iconos {
+                li{
+                    text-decoration: none;
+                    padding: 25px;
+                    list-style: none;
+                    a {
+                        padding: 20px;
+                    }
+                    img {
+                        width: 30px;
+                        height: 30px;
+                    }
+                
+                }
+            }
+
+
+
+
+    }
+
+
+
+
+}
