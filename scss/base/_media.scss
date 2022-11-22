@@ -21,13 +21,6 @@
 }
 
 @media  screen and (max-width:600px){
-    .products{
-        grid-template-columns: repeat(1,1fr);
-        padding-top: 50px;
-         
-
-        
-    }
 
     .iconos {
         li{
@@ -60,16 +53,6 @@
         }
     }
 
-    .gridContenedor {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows:.5fr .5fr ;   
-       grid-template-areas: 
-       "mp mp"
-       "cripto paypal"
-       "efectivo ."
-   
-       ;
-       }
 }
 
 @media screen and (max-width: 900px){
@@ -101,3 +84,120 @@
 
 }
 
+@media screen and (max-width:1024px){
+    .inicio {
+        li{
+            a{
+                font-size: .9em;
+                padding: 30px;
+                display: flex;
+                flex-direction:column  
+            }
+        }
+    }
+
+    .hero{
+        div{
+            h1{
+                font-size: 55px;
+
+            }
+        }
+    }
+
+    .esperando{
+
+    
+        h2{
+           font-size: 30px; 
+        }
+    }
+    .redes{
+        h3{
+            font-size: smaller;
+        }
+        .iconosRedes{
+            img{
+                width: 55px;
+                height: 50px;
+            }
+        }
+    }
+
+    .prod{
+        h3{
+            font-size: 20px;
+        }
+        h4{
+            font-size: 20px;
+        }
+    }
+    .products{
+        grid-template-columns: repeat(2,1fr);
+        padding-top: 50px;
+        
+    }
+
+    .gridContenedor {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows:.5fr .5fr ;   
+       grid-template-areas: 
+       "mp mp"
+       "cripto paypal"
+       "efectivo .";
+    } 
+       
+}
+
+
+@media screen and (max-width:728px){
+    .inicio {
+        li{
+            a{
+                font-size: .9em;
+                padding: 30px;
+                display: flex;
+                flex-direction:column  
+            }
+        }
+    }
+
+    .hero{
+        div{
+            h1{
+                font-size: 35px;
+
+            }
+        }
+    }
+
+    .esperando{
+        
+        h2{
+           font-size: 25px; 
+        }
+    }
+    .redes{
+        h3{
+            font-size: smaller;
+        }
+        .iconosRedes{
+            img{
+                width: 48px;
+                height: 40px;
+            }
+        }
+    }
+
+    .prod{
+        h3{
+            font-size: 16px;
+        }
+        h4{
+            font-size: 16px;
+        }
+        
+    }
+
+
+}

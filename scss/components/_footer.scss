@@ -1,36 +1,39 @@
 @import "../base/variables";
 .redes {
-    font-size: 30px;
     border-top: solid 2px black;
-    div{
-        img{
-            width: 3%;
-            height: 3%;  
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    h3 {
+        font-size: 1.6em;
+        font-family: $fuente-principal;
+    }
+    .footerBox {
+        display: flex;
+        align-items: center;
+        margin: 1rem 0;
+        gap: 1rem;
+        flex-direction: column;
+        .iconosRedes {
+            img {
+                width: 40px;
+            }
+
+        }
+        .contacto {
+            display: flex;
+            font-family: $fuente-principal;
+            color: rgb(36, 36, 36);
+            font-size: 1.2em;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            h3 {
+                font-weight: bold;
+                font-size: 1.2em;
+            }
         }
     }
-    h3{
-        grid-area: footer;
-        height: 200px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: rgb(0, 0, 0);
-        font-family: $fuente-principal;
-        text-align: center;
-    }
-    .iconosRedes{
-        @extend %flex;
-        gap:20px;
 
-    }
-    .contacto{
-        h4 {
-            font-size: 18px;
-            font-family: $fuente-principal;
-            display: flex;
-            margin-left: 20px;
-            
-         }
-
-    }
 }

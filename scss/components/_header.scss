@@ -9,19 +9,21 @@ header {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        
         .inicio{
-            text-decoration: none;
-            flex: 1;
+            list-style: none;
             display: flex;
-            justify-content: center;
+            
+            align-items: center;
+            flex: 1;
 
             li{
                 a{
                     text-decoration: none;
-                    list-style: none;
-                    padding: 25px;
+                    padding: 0 1.6rem;
                     font-family: $fuente-principal;
-                    font-size: 1.2em;
+                    font-size: 1.4em;
+                    color: black;
                     &:hover {
                         color:#FCA311;
                         text-decoration: underline;
@@ -32,19 +34,24 @@ header {
 
         }
             .logo {
-                flex: 1;
+                
                 display: flex;
                 justify-content: center;
-                    img{
-                        width: 70px;
+                 img{
+                       width: 70px;
                         height: 70px;
                      }
             }
-            .iconos {
+            .iconos {            
+                flex: 1;
+                display: flex;
+                justify-content: right;       
                 li{
                     text-decoration: none;
                     padding: 25px;
                     list-style: none;
+
+                    
                     a {
                         padding: 20px;
                     }
